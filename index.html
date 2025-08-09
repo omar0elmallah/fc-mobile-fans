@@ -1,2 +1,482 @@
-<img src="https://media.istockphoto.com/id/1449580178/vector/under-construction-sign-vector-for-banner-website-ig.jpg?s=612x612&w=0&k=20&c=Eqa3KodRrtCGvMAd0Iay7K5bsNIH37zBbnLCLDPPARQ=" alt="coming soon" width="500" height="600">
-<a href="https://omar0elmallah.github.io/contact/">contact</a>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Mobile Fans - كل شيء عن لعبة FC Mobile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="FC Mobile Fans Logo">
+                <h1>FC Mobile Fans</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="active">الرئيسية</a></li>
+                    <li><a href="#news">الأخبار</a></li>
+                    <li><a href="#players">اللاعبون</a></li>
+                    <li><a href="#events">الأحداث</a></li>
+                    <li><a href="#rewards">المكافآت</a></li>
+                    <li><a href="#guides">الإرشادات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>مرحبًا بكم في عالم FC Mobile</h2>
+                <p>الموقع الرائد لمحبي لعبة FC Mobile - أخبار، أحداث، لاعبون، إرشادات وأكثر!</p>
+                <div class="hero-buttons">
+                    <a href="#rewards" class="btn primary-btn">المكافآت اليومية</a>
+                    <a href="#guides" class="btn secondary-btn">إرشادات اللعبة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأخبار -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">آخر الأخبار والتحديثات</h2>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="images/news1.jpg" alt="خبر رئيسي">
+                        <span class="news-tag">مميز</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>تحديث الموسم الجديد يصل مع لاعبين جدد وميزات رائعة</h3>
+                        <p class="news-date"><i class="far fa-calendar-alt"></i> 15 أغسطس 2023</p>
+                        <p class="news-excerpt">تم إطلاق التحديث الجديد للعبة FC Mobile والذي يحتوي على العديد من الميزات الجديدة والتحسينات...</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news2.jpg" alt="خبر 2">
+                    </div>
+                    <div class="news-content">
+                        <h3>أفضل التشكيلات للموسم الحالي</h3>
+                        <p class="news-date"><i class="far fa-calendar-alt"></i> 10 أغسطس 2023</p>
+                        <p class="news-excerpt">تعرف على أفضل التشكيلات التي يمكنك استخدامها للفوز في المباريات هذا الموسم...</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news3.jpg" alt="خبر 3">
+                    </div>
+                    <div class="news-content">
+                        <h3>مسابقة جديدة مع جوائز قيمة</h3>
+                        <p class="news-date"><i class="far fa-calendar-alt"></i> 5 أغسطس 2023</p>
+                        <p class="news-excerpt">شارك في المسابقة الجديدة واربح بطاقات لاعبين نادرة ونقاط تحسين...</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="view-all">عرض جميع الأخبار <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اللاعبين -->
+    <section id="players" class="players-section">
+        <div class="container">
+            <h2 class="section-title">أفضل اللاعبين هذا الموسم</h2>
+            <div class="players-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="attacker">هجوم</button>
+                <button class="filter-btn" data-filter="midfielder">وسط</button>
+                <button class="filter-btn" data-filter="defender">دفاع</button>
+                <button class="filter-btn" data-filter="goalkeeper">حارس</button>
+            </div>
+            <div class="players-grid">
+                <div class="player-card" data-position="attacker">
+                    <div class="player-image">
+                        <img src="images/messi.jpg" alt="ليونيل ميسي">
+                        <div class="player-rating">98</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>ليونيل ميسي</h3>
+                        <p class="player-position">مهاجم</p>
+                        <p class="player-team"><img src="images/inter-miami.png" alt="إنتر ميامي"> إنتر ميامي</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="attacker">
+                    <div class="player-image">
+                        <img src="images/ronaldo.jpg" alt="كريستيانو رونالدو">
+                        <div class="player-rating">97</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>كريستيانو رونالدو</h3>
+                        <p class="player-position">مهاجم</p>
+                        <p class="player-team"><img src="images/al-nassr.png" alt="النصر"> النصر</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="images/debruyne.jpg" alt="كيفين دي بروين">
+                        <div class="player-rating">96</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>كيفين دي بروين</h3>
+                        <p class="player-position">وسط</p>
+                        <p class="player-team"><img src="images/man-city.png" alt="مانشستر سيتي"> مانشستر سيتي</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="images/vandijk.jpg" alt="فيرجيل فان دايك">
+                        <div class="player-rating">95</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>فيرجيل فان دايك</h3>
+                        <p class="player-position">دفاع</p>
+                        <p class="player-team"><img src="images/liverpool.png" alt="ليفربول"> ليفربول</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="goalkeeper">
+                    <div class="player-image">
+                        <img src="images/courtois.jpg" alt="تيبو كورتوا">
+                        <div class="player-rating">94</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>تيبو كورتوا</h3>
+                        <p class="player-position">حارس</p>
+                        <p class="player-team"><img src="images/real-madrid.png" alt="ريال مدريد"> ريال مدريد</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="images/modric.jpg" alt="لوكا مودريتش">
+                        <div class="player-rating">93</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>لوكا مودريتش</h3>
+                        <p class="player-position">وسط</p>
+                        <p class="player-team"><img src="images/real-madrid.png" alt="ريال مدريد"> ريال مدريد</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="view-all">عرض جميع اللاعبين <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأحداث -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">الأحداث القادمة</h2>
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="event-day">20</span>
+                        <span class="event-month">أغسطس</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>حدث نهاية الموسم</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 18:00 - 22:00 بتوقيت مكة</p>
+                        <p class="event-desc">حدث خاص مع جوائز ضخمة للاحتفال بنهاية الموسم الحالي.</p>
+                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="event-day">25</span>
+                        <span class="event-month">أغسطس</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>بطولة الأبطال</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 19:00 - 23:00 بتوقيت مكة</p>
+                        <p class="event-desc">شارك في البطولة واربح بطاقات لاعبين أسطوريين.</p>
+                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="event-day">1</span>
+                        <span class="event-month">سبتمبر</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>بداية الموسم الجديد</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 00:00 بتوقيت مكة</p>
+                        <p class="event-desc">انطلاق الموسم الجديد مع لاعبين جدد وتحديثات كبيرة.</p>
+                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المكافآت -->
+    <section id="rewards" class="rewards-section">
+        <div class="container">
+            <h2 class="section-title">مكافآت اليوم</h2>
+            <div class="rewards-container">
+                <div class="reward-card">
+                    <div class="reward-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="reward-content">
+                        <h3>كود المكافأة اليومية</h3>
+                        <div class="reward-code-container">
+                            <input type="text" class="reward-code" value="FCMF2023AUG" readonly id="rewardCode">
+                            <button class="copy-btn" onclick="copyRewardCode()">
+                                <i class="far fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                        <p class="reward-desc">استخدم هذا الكود في اللعبة لتحصل على 5000 عملة و 2 لاعب ذهبي!</p>
+                        <p class="reward-expiry">صالح حتى: 31 أغسطس 2023</p>
+                    </div>
+                </div>
+
+                <div class="reward-steps">
+                    <h3>كيفية استبدال الكود:</h3>
+                    <ol>
+                        <li>افتح لعبة FC Mobile</li>
+                        <li>اضغط على أيقونة "الإعدادات"</li>
+                        <li>اختر "استبدال الكود"</li>
+                        <li>أدخل الكود أعلاه</li>
+                        <li>استلم مكافآتك!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإرشادات -->
+    <section id="guides" class="guides-section">
+        <div class="container">
+            <h2 class="section-title">إرشادات اللعبة</h2>
+            <div class="guides-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        <span>كيفية بناء فريق قوي بدون إنفاق أموال؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>بناء فريق قوي بدون إنفاق أموال يتطلب الصبر والاستراتيجية. إليك بعض النصائح:</p>
+                        <ul>
+                            <li>احصل على المكافآت اليومية بانتظام</li>
+                            <li>شارك في جميع الأحداث المجانية</li>
+                            <li>ركز على تطوير لاعبين شباب لديهم إمكانات عالية</li>
+                            <li>استخدم الكودات الترويجية مثل التي نقدمها في موقعنا</li>
+                            <li>شارك في دوريات الأسبوعية لتحصل على جوائز قيمة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        <span>أفضل التشكيلات للموسم الحالي</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>التشكيلات المثالية تختلف حسب أسلوب لعبك، ولكن هذه بعض التشكيلات الفعالة:</p>
+                        <ul>
+                            <li><strong>4-3-3 الهجومي:</strong> مثالي للهجمات السريعة</li>
+                            <li><strong>4-2-3-1 المتوازن:</strong> يوازن بين الهجوم والدفاع</li>
+                            <li><strong>5-2-1-2 الدفاعي:</strong> رائع عندما تريد الحفاظ على تقدمك</li>
+                            <li><strong>3-5-2 الهجومي:</strong> للسيطرة على وسط الملعب</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        <span>كيفية الفوز في مباريات H2H</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>للفوز في مباريات اللاعب ضد اللاعب (H2H)، اتبع هذه الاستراتيجيات:</p>
+                        <ul>
+                            <li>تعلم مهارات المراوغة الأساسية لتجاوز المدافعين</li>
+                            <li>لا تسرع في الهجمات، تحلى بالصبر</li>
+                            <li>استخدم تمريرات قصيرة لبناء الهجمات</li>
+                            <li>اضبط تشكيلك وفقًا لأسلوب لعب خصمك</li>
+                            <li>تدرب على التسديدات من خارج المنطقة</li>
+                            <li>استبدل اللاعبين المتعبين في الشوط الثاني</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        <span>نصائح لتحسين مهاراتك في FC Mobile</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>لتصبح لاعبًا أفضل في FC Mobile:</p>
+                        <ul>
+                            <li>تدرب بانتظام في وضع التدريب</li>
+                            <li>شاهد مباريات اللاعبين المحترفين على يوتيوب</li>
+                            <li>جرب أوضاع تحكم مختلفة لتجد ما يناسبك</li>
+                            <li>تعلم التوقيت الصحيح للمس والتسديد</li>
+                            <li>اضبط حساسية التحكم حسب راحتك</li>
+                            <li>تابع قنوات مثل قناتنا على اليوتيوب لتعلم الحيل الجديدة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@fcmobilefans.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>واتساب</h3>
+                            <p>+1234567890</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>تلغرام</h3>
+                            <p>@fcmobilefans</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="FC Mobile Fans Logo">
+                        <h3>FC Mobile Fans</h3>
+                    </div>
+                    <p class="footer-about">الموقع الرسمي لمحبي لعبة FC Mobile. نقدم آخر الأخبار، الأحداث، المكافآت والإرشادات لمساعدتك في أن تصبح الأفضل!</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#news">الأخبار</a></li>
+                        <li><a href="#players">اللاعبون</a></li>
+                        <li><a href="#events">الأحداث</a></li>
+                        <li><a href="#rewards">المكافآت</a></li>
+                        <li><a href="#guides">الإرشادات</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">مواقع رسمية</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ea.com/games/fc-mobile" target="_blank">موقع EA الرسمي</a></li>
+                        <li><a href="https://www.ea.com/games/fc-mobile/fc-mobile-news" target="_blank">أخبار FC Mobile</a></li>
+                        <li><a href="https://www.ea.com/games/fc-mobile/ultimate-team" target="_blank">Ultimate Team</a></li>
+                        <li><a href="https://answers.ea.com/t5/FC-Mobile/ct-p/FC-Mobile" target="_blank">الدعم الفني</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">النشرة البريدية</h3>
+                    <p class="newsletter-desc">اشترك ليصلك كل جديد عن اللعبة مباشرة إلى بريدك</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">اشترك الآن</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 FC Mobile Fans. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">شروط الاستخدام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
