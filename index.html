@@ -102,17 +102,26 @@
     <!-- قسم اللاعبين -->
     <section id="players" class="players-section">
         <div class="container">
-            <h2 class="section-title">أفضل اللاعبين هذا الموسم</h2>
+            <h2 class="section-title">أفضل اللاعبين</h2>
             <div class="players-filter">
-                <button class="filter-btn active" data-filter1="ALL">الكل</button>
-                <button class="filter-btn" data-filter1="GK">حارس</button>
-                <button class="filter-btn" data-filter1="CB" data-filter2="LB" data-filter3="RB">دفاع</button>
-                <button class="filter-btn" data-filter1="CDM" data-filter2="CM" data-filter3="CAM" data-filter4="RM" data-filter5="LM">وسط</button>
-                <button class="filter-btn" data-filter1="ST" data-filter2="CF" data-filter3="RF" data-filter4="LF" data-filter5="RW" data-filter6="LW">هجوم</button>
-            </div>
+                <button class="filter-btn active" data-filter="all">الكل</button>
             
-            <!-- بطاقات اللاعبين -->
-            <div class="players-list">
+                <!-- حارس المرمى -->
+                <button class="filter-btn" data-filter="GK">حارس</button>
+            
+                <!-- الدفاع -->
+                <button class="filter-btn" data-filter="CB,LB,RB,RWB,LWB">دفاع</button>
+            
+                <!-- الوسط -->
+                <button class="filter-btn" data-filter="CDM,CM,CAM,RM,LM">وسط</button>
+            
+                <!-- الهجوم -->
+                <button class="filter-btn" data-filter="ST,CF,RF,LF,RW,LW">هجوم</button>
+            </div>
+
+            <div class="players-grid">
+
+                
                 <div class="player-card" data-position="ST">
                     <div class="player-image">
                         <img src="https://static.wixstatic.com/media/233dc5_a14b854490234359b186a9a9f70921f1~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250804_022847.png" alt="zlatan">
@@ -121,22 +130,26 @@
                     <div class="player-info">
                         <h3>zlatan</h3>
                         <p class="player-position">ST</p>
-                        <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt="icon">icon</p>
+                        <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt=" icon">icon</p>
                     </div>
                 </div>
-            
+
+                
+                
                 <div class="player-card" data-position="CM">
                     <div class="player-image">
                         <img src="https://static.wixstatic.com/media/233dc5_b3f63138ba174d38a2d7d4357eea7ecf~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250804_022934.png" alt="jude bellingham">
                         <div class="player-rating">111</div>
                     </div>
                     <div class="player-info">
-                        <h3>jude bellingham</h3>
+                        <h3>jude bellingham </h3>
                         <p class="player-position">CM</p>
                         <p class="player-team"><img src="https://images.seeklogo.com/logo-png/11/3/real-madrid-club-de-futbol-logo-png_seeklogo-116421.png" alt="rm">real madrid</p>
                     </div>
                 </div>
-            
+
+
+                
                 <div class="player-card" data-position="GK">
                     <div class="player-image">
                         <img src="https://static.wixstatic.com/media/233dc5_ba64665182714202aa861c68d9b96b07~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250721_034138.png" alt="lev">
@@ -148,7 +161,9 @@
                         <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt="icon">icon</p>
                     </div>
                 </div>
-            
+
+                
+
                 <div class="player-card" data-position="CB">
                     <div class="player-image">
                         <img src="https://static.wixstatic.com/media/233dc5_4ba6992a681c4c7686512e922da2dbdc~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250804_022911.png" alt="ferdinand">
@@ -157,10 +172,10 @@
                     <div class="player-info">
                         <h3>ferdinand</h3>
                         <p class="player-position">CB</p>
-                        <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt="icon">icon</p>
+                        <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt="icon">icon </p>
                     </div>
                 </div>
-            
+
                 <div class="player-card" data-position="CAM">
                     <div class="player-image">
                         <img src="https://static.wixstatic.com/media/233dc5_c7225e72a5a14eaa812f4bd2b565542b~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250721_034127.png" alt="Cole Palmer">
@@ -172,10 +187,13 @@
                         <p class="player-team"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png" alt="chelsea">chelsea</p>
                     </div>
                 </div>
-            
+
+
+                
+
                 <div class="player-card" data-position="RB">
                     <div class="player-image">
-                        <img src="https://static.wixstatic.com/media/233dc5_d42d569ee30a4fd8b235b946e640fe46~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250714_045302.png" alt="carlos alberto">
+                        <img src="https://static.wixstatic.com/media/233dc5_d42d569ee30a4fd8b235b946e640fe46~mv2.png/v1/fill/w_279,h_345,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20250714_045302.png" alt="لوكا مودريتش">
                         <div class="player-rating">111</div>
                     </div>
                     <div class="player-info">
@@ -184,12 +202,12 @@
                         <p class="player-team"><img src="https://fifaprizee.com/assets/cards/download_24/team_logos_256x256_L114154.png" alt="icon">icon</p>
                     </div>
                 </div>
-    </div>
-        
-       
-
-
-
+            </div>
+            <div class="section-footer">
+                <a href="#" class="view-all">عرض جميع اللاعبين <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
 
     <!-- قسم الأحداث -->
     <section id="events" class="events-section">
@@ -480,36 +498,5 @@
     </a>
 
     <script src="script.js"></script>
-    <script>
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const playerCards = document.querySelectorAll('.player-card');
-    
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // إزالة الكلاس النشط من الكل
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-    
-                // جمع كل الفلاتر من attributes اللي بتبدأ بـ data-filter
-                let filters = [];
-                for (let attr of button.attributes) {
-                    if (attr.name.startsWith('data-filter')) {
-                        filters.push(attr.value.toUpperCase().trim());
-                    }
-                }
-    
-                playerCards.forEach(card => {
-                    let position = card.dataset.position.toUpperCase().trim();
-    
-                    if (filters.includes('ALL') || filters.includes(position)) {
-                        card.style.display = '';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-
 </body>
 </html>
