@@ -214,18 +214,17 @@
     
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // إزالة الـ active من كل الأزرار
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
     
-                const filterValue = button.getAttribute('data-filter');
-                const filterArray = filterValue.split(','); // نحولها لمصفوفة
+                const filterValue = button.getAttribute('data-filter').replace(/\s+/g, '');
+                const filterArray = filterValue.split(',').map(pos => pos.trim());
     
                 playerCards.forEach(card => {
-                    const playerPos = card.getAttribute('data-position');
+                    const playerPos = card.getAttribute('data-position').trim();
     
                     if (filterValue === 'all' || filterArray.includes(playerPos)) {
-                        card.style.display = 'block';
+                        card.style.display = '';
                     } else {
                         card.style.display = 'none';
                     }
@@ -233,6 +232,7 @@
             });
         });
     </script>
+
 
 
     <!-- قسم الأحداث -->
