@@ -208,6 +208,32 @@
             </div>
         </div>
     </section>
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const playerCards = document.querySelectorAll('.player-card');
+    
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // إزالة الـ active من كل الأزرار
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+    
+                const filterValue = button.getAttribute('data-filter');
+                const filterArray = filterValue.split(','); // نحولها لمصفوفة
+    
+                playerCards.forEach(card => {
+                    const playerPos = card.getAttribute('data-position');
+    
+                    if (filterValue === 'all' || filterArray.includes(playerPos)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
 
     <!-- قسم الأحداث -->
     <section id="events" class="events-section">
