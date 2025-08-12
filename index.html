@@ -24,7 +24,7 @@
                     <li><a href="#home" class="active">الرئيسية</a></li>
                     <li><a href="#news">الأخبار</a></li>
                     <li><a href="#players">اللاعبون</a></li>
-                    <li><a href="#events">الأحداث</a></li>
+                   
                     <li><a href="#rewards">المكافآت</a></li>
                     <li><a href="#guides">الإرشادات</a></li>
                     <li><a href="#contact">اتصل بنا</a></li>
@@ -116,7 +116,7 @@
                 <button class="filter-btn" data-filter="Midfielder">وسط</button>
             
                 <!-- الهجوم -->
-                <button class="filter-btn" data-filter="">هجوم</button>
+                <button class="filter-btn" data-filter="Attacker">هجوم</button>
             </div>
 
             <div class="players-grid">
@@ -209,52 +209,8 @@
         </div>
     </section>
 
-    <!-- قسم الأحداث -->
-    <section id="events" class="events-section">
-        <div class="container">
-            <h2 class="section-title">الأحداث القادمة</h2>
-            <div class="events-timeline">
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-day">20</span>
-                        <span class="event-month">أغسطس</span>
-                    </div>
-                    <div class="event-content">
-                        <h3>حدث نهاية الموسم</h3>
-                        <p class="event-time"><i class="far fa-clock"></i> 18:00 - 22:00 بتوقيت مكة</p>
-                        <p class="event-desc">حدث خاص مع جوائز ضخمة للاحتفال بنهاية الموسم الحالي.</p>
-                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
 
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-day">25</span>
-                        <span class="event-month">أغسطس</span>
-                    </div>
-                    <div class="event-content">
-                        <h3>بطولة الأبطال</h3>
-                        <p class="event-time"><i class="far fa-clock"></i> 19:00 - 23:00 بتوقيت مكة</p>
-                        <p class="event-desc">شارك في البطولة واربح بطاقات لاعبين أسطوريين.</p>
-                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="event-day">1</span>
-                        <span class="event-month">سبتمبر</span>
-                    </div>
-                    <div class="event-content">
-                        <h3>بداية الموسم الجديد</h3>
-                        <p class="event-time"><i class="far fa-clock"></i> 00:00 بتوقيت مكة</p>
-                        <p class="event-desc">انطلاق الموسم الجديد مع لاعبين جدد وتحديثات كبيرة.</p>
-                        <a href="#" class="event-link">تفاصيل أكثر <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      
 
     <!-- قسم المكافآت -->
     <section id="rewards" class="rewards-section">
@@ -381,38 +337,14 @@
                         </div>
                         <div class="info-content">
                             <h3>البريد الإلكتروني</h3>
-                            <p>info@fcmobilefans.com</p>
+                            <p>omar.elmallah2001@gmail.com</p>
                         </div>
                     </div>
 
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>واتساب</h3>
-                            <p>+1234567890</p>
-                        </div>
-                    </div>
+                
 
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fab fa-telegram"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>تلغرام</h3>
-                            <p>@fcmobilefans</p>
-                        </div>
-                    </div>
+             
 
-                    <div class="social-media">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
 
                 <div class="contact-form">
                     <form id="contactForm">
@@ -431,6 +363,32 @@
                         <button type="submit" class="submit-btn">إرسال الرسالة</button>
                     </form>
                 </div>
+                
+                <!-- مكتبة EmailJS -->
+               <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+               <script>
+                    (function(){
+                        emailjs.init("seqXzDDubeA74v1Je"); // حط المفتاح من EmailJS
+                    })();
+                
+                    document.getElementById("contactForm").addEventListener("submit", function(e){
+                        e.preventDefault();
+                
+                        emailjs.send("service_o8cwd5v", "template_kt58b2e", {
+                            name: document.getElementById("name").value,
+                            email: document.getElementById("email").value,
+                            subject: document.getElementById("subject").value,
+                            message: document.getElementById("message").value
+                        })
+                        .then(function() {
+                            alert("✅ تم إرسال الرسالة بنجاح");
+                            document.getElementById("contactForm").reset();
+                        }, function(error) {
+                            alert("❌ حدث خطأ: " + JSON.stringify(error));
+                        });
+                    });
+                </script>
+
             </div>
         </div>
     </section>
